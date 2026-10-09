@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/contexierge.svg" width="280" alt="Contexierge: a chibi cat butler serving a floppy disk on a silver tray">
+  <img src="assets/contexierge.webp" width="320" alt="Contexierge: an anime catgirl concierge serving a floppy disk on a silver tray">
 </p>
 
 # Contexierge
@@ -73,4 +73,4 @@ Test the plugin locally without installing: `claude --plugin-dir ./plugins/conte
 
 ## License
 
-MIT
+MIT. The mascot was generated with [Qwen-Image](https://huggingface.co/Qwen/Qwen-Image) (Apache 2.0).
