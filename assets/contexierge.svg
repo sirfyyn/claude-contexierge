@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="t">
+  <title id="t">Contexierge — a chibi cat butler serving a floppy disk</title>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#FFF4F8"/>
+      <stop offset="1" stop-color="#FFE1EC"/>
+    </radialGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1B2E"/>
+      <stop offset="0.65" stop-color="#3B2450"/>
+      <stop offset="1" stop-color="#8A5BC7"/>
+    </linearGradient>
+    <linearGradient id="tray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#D9E0EA"/>
+      <stop offset="1" stop-color="#AEB8C6"/>
+    </linearGradient>
+    <linearGradient id="disk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FA8F5"/>
+      <stop offset="1" stop-color="#4C79DB"/>
+    </linearGradient>
+    <path id="spark" d="M0,-12 Q2,-2 12,0 Q2,2 0,12 Q-2,2 -12,0 Q-2,-2 0,-12 Z"/>
+    <path id="heart" d="M0,6 C-10,-2 -8,-10 -3,-10 C-1,-10 0,-8 0,-7 C0,-8 1,-10 3,-10 C8,-10 10,-2 0,6 Z"/>
+  </defs>
+
+  <!-- backdrop -->
+  <circle cx="256" cy="262" r="236" fill="url(#bg)"/>
+  <ellipse cx="256" cy="466" rx="120" ry="14" fill="#F2BFD0" opacity="0.7"/>
+
+  <!-- tail -->
+  <path d="M314,430 C364,452 420,446 434,412 C444,388 426,376 414,388" fill="none" stroke="#5A3A2E" stroke-width="30" stroke-linecap="round"/>
+  <path d="M314,430 C364,452 420,446 434,412 C444,388 426,376 414,388" fill="none" stroke="#F7C27E" stroke-width="22" stroke-linecap="round"/>
+  <path d="M430,418 C438,404 438,394 432,386" fill="none" stroke="#E59A4E" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- feet -->
+  <ellipse cx="226" cy="448" rx="24" ry="13" fill="#FFF7EC" stroke="#5A3A2E" stroke-width="4"/>
+  <ellipse cx="286" cy="448" rx="24" ry="13" fill="#FFF7EC" stroke="#5A3A2E" stroke-width="4"/>
+
+  <!-- tailcoat body -->
+  <path d="M198,316 Q184,380 190,432 Q214,444 238,440 L256,416 L274,440 Q298,444 322,432 Q328,380 314,316 Z"
+        fill="#2F3150" stroke="#1E1F33" stroke-width="4" stroke-linejoin="round"/>
+  <!-- shirt front -->
+  <path d="M230,316 L256,404 L282,316 Z" fill="#FFFFFF" stroke="#1E1F33" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="256" cy="352" r="3.5" fill="#C9CFD9"/>
+  <circle cx="256" cy="372" r="3.5" fill="#C9CFD9"/>
+  <!-- lapel buttons -->
+  <circle cx="226" cy="388" r="5" fill="#F4C84A" stroke="#B88A1E" stroke-width="2"/>
+  <circle cx="286" cy="388" r="5" fill="#F4C84A" stroke="#B88A1E" stroke-width="2"/>
+
+  <!-- left arm with napkin -->
+  <path d="M206,334 Q190,370 206,398" fill="none" stroke="#1E1F33" stroke-width="30" stroke-linecap="round"/>
+  <path d="M206,334 Q190,370 206,398" fill="none" stroke="#2F3150" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="207" cy="406" r="12" fill="#FFF7EC" stroke="#5A3A2E" stroke-width="4"/>
+  <path d="M184,362 Q204,352 226,362 L224,394 Q218,388 212,394 Q206,388 200,394 Q194,388 188,394 Z"
+        fill="#FFFFFF" stroke="#5A3A2E" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M196,364 L194,388 M212,362 L212,388" stroke="#E3E8EF" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- bow tie -->
+  <path d="M256,322 L230,308 Q226,322 230,336 Z" fill="#F0567A" stroke="#9E2546" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M256,322 L282,308 Q286,322 282,336 Z" fill="#F0567A" stroke="#9E2546" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="256" cy="322" r="7" fill="#F7849F" stroke="#9E2546" stroke-width="3"/>
+
+  <!-- ears -->
+  <path d="M148,150 L156,62 Q160,56 166,60 L232,112 Z" fill="#F7C27E" stroke="#5A3A2E" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M364,150 L356,62 Q352,56 346,60 L280,112 Z" fill="#F7C27E" stroke="#5A3A2E" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M164,130 L166,82 L208,114 Z" fill="#FFB3C6"/>
+  <path d="M348,130 L346,82 L304,114 Z" fill="#FFB3C6"/>
+
+  <!-- head -->
+  <ellipse cx="256" cy="202" rx="126" ry="104" fill="#F7C27E" stroke="#5A3A2E" stroke-width="5"/>
+  <!-- tuft and stripes -->
+  <path d="M240,100 Q250,84 256,98 Q262,82 274,100" fill="#F7C27E" stroke="#5A3A2E" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M256,104 L256,124 M236,108 L240,124 M276,108 L272,124" stroke="#E59A4E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M132,196 L150,198 M134,214 L150,212 M380,196 L362,198 M378,214 L362,212" stroke="#E59A4E" stroke-width="5" stroke-linecap="round"/>
+  <!-- muzzle -->
+  <ellipse cx="256" cy="246" rx="44" ry="30" fill="#FFF3E2"/>
+
+  <!-- eyes -->
+  <g>
+    <ellipse cx="204" cy="208" rx="22" ry="27" fill="url(#iris)"/>
+    <circle cx="196" cy="198" r="9" fill="#FFFFFF"/>
+    <circle cx="212" cy="219" r="4.5" fill="#FFFFFF"/>
+    <circle cx="203" cy="224" r="2" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <g>
+    <ellipse cx="308" cy="208" rx="22" ry="27" fill="url(#iris)"/>
+    <circle cx="300" cy="198" r="9" fill="#FFFFFF"/>
+    <circle cx="316" cy="219" r="4.5" fill="#FFFFFF"/>
+    <circle cx="307" cy="224" r="2" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <!-- blush -->
+  <ellipse cx="172" cy="246" rx="18" ry="10" fill="#FF8FAE" opacity="0.6"/>
+  <ellipse cx="340" cy="246" rx="18" ry="10" fill="#FF8FAE" opacity="0.6"/>
+  <path d="M164,244 l4,-6 M172,244 l4,-6 M332,244 l4,-6 M340,244 l4,-6" stroke="#F06A8E" stroke-width="2" stroke-linecap="round"/>
+  <!-- nose and ω mouth -->
+  <path d="M249,234 L263,234 L256,242 Z" fill="#F57C9C" stroke="#5A3A2E" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M242,250 Q249,260 256,250 Q263,260 270,250" fill="none" stroke="#5A3A2E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256,242 L256,250" stroke="#5A3A2E" stroke-width="3" stroke-linecap="round"/>
+  <!-- whiskers -->
+  <path d="M206,244 L160,236 M206,252 L158,256 M306,244 L352,236 M306,252 L354,256" stroke="#5A3A2E" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- right arm raising the tray -->
+  <path d="M306,334 Q350,354 398,350" fill="none" stroke="#1E1F33" stroke-width="30" stroke-linecap="round"/>
+  <path d="M306,334 Q350,354 398,350" fill="none" stroke="#2F3150" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="404" cy="346" r="13" fill="#FFF7EC" stroke="#5A3A2E" stroke-width="4"/>
+
+  <!-- silver tray -->
+  <ellipse cx="404" cy="334" rx="66" ry="13" fill="url(#tray)" stroke="#6B7686" stroke-width="3"/>
+  <ellipse cx="404" cy="331" rx="52" ry="7" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+
+  <!-- floppy disk, served -->
+  <g transform="translate(404 290) rotate(-8) translate(-38 -38)">
+    <path d="M6,0 L62,0 L76,14 L76,70 Q76,76 70,76 L6,76 Q0,76 0,70 L0,6 Q0,0 6,0 Z"
+          fill="url(#disk)" stroke="#23396E" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="18" y="0" width="38" height="24" rx="2" fill="#DCE3EC" stroke="#23396E" stroke-width="3"/>
+    <rect x="40" y="5" width="9" height="15" rx="1.5" fill="#4C5E80"/>
+    <rect x="10" y="36" width="56" height="34" rx="4" fill="#FFFFFF" stroke="#23396E" stroke-width="3"/>
+    <circle cx="28" cy="50" r="3" fill="#2A1B2E"/>
+    <circle cx="48" cy="50" r="3" fill="#2A1B2E"/>
+    <path d="M33,55 Q38,61 43,55" fill="none" stroke="#2A1B2E" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="21" cy="57" rx="4" ry="2.5" fill="#FF8FAE" opacity="0.8"/>
+    <ellipse cx="55" cy="57" rx="4" ry="2.5" fill="#FF8FAE" opacity="0.8"/>
+  </g>
+
+  <!-- sparkles and hearts -->
+  <use href="#spark" transform="translate(460 252) scale(1.1)" fill="#FFD25A"/>
+  <use href="#spark" transform="translate(470 318) scale(0.55)" fill="#9EC3FF"/>
+  <use href="#spark" transform="translate(70 170) scale(0.9)" fill="#FFD25A"/>
+  <use href="#spark" transform="translate(96 330) scale(0.6)" fill="#9EC3FF"/>
+  <use href="#heart" transform="translate(86 250) scale(1.6)" fill="#FF7FA3"/>
+  <use href="#heart" transform="translate(424 112) scale(1.9) rotate(12)" fill="#FF7FA3"/>
+  <use href="#heart" transform="translate(452 168) scale(1.1) rotate(-10)" fill="#FFB3C6"/>
+</svg>

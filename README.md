@@ -1,6 +1,11 @@
+<p align="center">
+  <img src="assets/contexierge.svg" width="280" alt="Contexierge: a chibi cat butler serving a floppy disk on a silver tray">
+</p>
+
 # Contexierge
 
 *Context + concierge* — a small Claude Code plugin that lets Claude look after its own context.
+Your context, served back on a silver tray after every compaction.
 
 Long Claude Code sessions eventually get compacted: the harness replaces the conversation with an automatic summary.
 That summary is written in a hurry and loses things — the exact wording of a request, a decision made two hours ago,
