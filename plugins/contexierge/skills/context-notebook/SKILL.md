@@ -20,12 +20,18 @@ python3 "${CLAUDE_PLUGIN_ROOT}/hooks/contexierge.py" --path
 
 (or `echo ~/.claude/contexierge/$CLAUDE_CODE_SESSION_ID.md`). Write it with the Write/Edit tools.
 
+**One day, one book.** The first session start of a new day (day begins at 04:00, `CONTEXIERGE_DAY_START_HOUR`)
+moves every notebook from earlier days to `~/.claude/contexierge/archive/<day>/`. If your notebook vanished mid-session,
+that is the day change: write a fresh one at the same path with only what is still open or still matters today —
+don't copy the old one over. The archived version is there to read if you need it.
+
 ## When
 
 - Start it as soon as a task has more than one thread, background work, or will clearly run long.
 - Update it at milestones: a thread finished, a new decision or approval, a new request, a background job started or
   done. Rewrite — collapse finished work to one line, delete what was revoked.
 - If a compaction just happened and the hook said the notebook is missing, create it right away.
+- If the hook handed you an archived notebook from the day change, write the fresh one right away.
 
 ## What goes in (≤ ~150 lines)
 

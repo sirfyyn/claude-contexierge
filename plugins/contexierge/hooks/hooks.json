@@ -1,9 +1,9 @@
 {
-  "description": "Contexierge: after every compaction, inject the context notebook Claude keeps for this session",
+  "description": "Contexierge: archive earlier days' notebooks on the first start of a day; after every compaction, inject the context notebook Claude keeps for this session",
   "hooks": {
     "SessionStart": [
       {
-        "matcher": "compact",
+        "matcher": "startup|resume|clear|compact",
         "hooks": [
           {
             "type": "command",
