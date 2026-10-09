@@ -1,0 +1,17 @@
+{
+  "description": "Contexierge: after every compaction, inject the context notebook Claude keeps for this session",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/contexierge.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

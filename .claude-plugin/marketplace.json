@@ -1,0 +1,15 @@
+{
+  "name": "contexierge",
+  "owner": { "name": "sirfyyn", "url": "https://github.com/sirfyyn" },
+  "metadata": {
+    "description": "Contexierge — self-maintained context that survives compaction in Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "contexierge",
+      "source": "./plugins/contexierge",
+      "description": "Claude keeps its own session notebook; a SessionStart/compact hook injects it verbatim after every compaction, ahead of the automatic summary.",
+      "category": "productivity"
+    }
+  ]
+}

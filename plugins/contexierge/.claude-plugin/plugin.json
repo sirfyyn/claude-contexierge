@@ -1,0 +1,10 @@
+{
+  "name": "contexierge",
+  "version": "0.1.0",
+  "description": "A concierge for Claude Code's context: Claude keeps its own session notebook, and it survives every compaction verbatim — instead of trusting the automatic summary.",
+  "author": { "name": "sirfyyn", "url": "https://github.com/sirfyyn" },
+  "homepage": "https://github.com/sirfyyn/claude-contexierge",
+  "repository": "https://github.com/sirfyyn/claude-contexierge",
+  "license": "MIT",
+  "keywords": ["context", "compaction", "memory", "hooks", "long-sessions", "context-language-models"]
+}
