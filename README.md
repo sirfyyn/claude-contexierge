@@ -19,7 +19,7 @@ verbatim, ahead of the summary.
 
 1. **Skill `context-notebook`** — tells Claude when and how to keep a notebook at
    `~/.claude/contexierge/<session-id>.md`: requests, decisions, where the work lives, state per thread, background
-   jobs, pitfalls. At most ~150 lines, rewritten at milestones rather than appended to.
+   jobs, pitfalls. At most ~150 lines and 9,000 characters, rewritten at milestones rather than appended to.
 2. **Hook `SessionStart` (matcher `compact`)** — runs right after each compaction and injects the notebook as
    additional context, marked as taking precedence over the automatic summary where they disagree.
    If no notebook exists yet, it injects a two-line instruction to create one.
@@ -55,7 +55,8 @@ Requires `python3` on your `PATH` (standard library only).
 
 Everything stays local. Set `CONTEXIERGE_DIR` to use a different directory. The archive is never pruned; delete old
 day folders whenever you like.
-Notebooks over 16,000 characters are truncated on injection, with a note telling Claude to condense.
+Notebooks over 9,000 characters are truncated on injection, with a note telling Claude to condense. The limit sits
+below Claude Code's own: hook context over 10,000 characters is moved into a file and shown only as a short preview.
 
 Print this session's notebook path from a Claude Code shell:
 

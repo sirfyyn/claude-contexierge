@@ -1,6 +1,6 @@
 {
   "name": "contexierge",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A concierge for Claude Code's context: Claude keeps its own session notebook, and it survives every compaction verbatim — instead of trusting the automatic summary.",
   "author": { "name": "sirfyyn", "url": "https://github.com/sirfyyn" },
   "homepage": "https://github.com/sirfyyn/claude-contexierge",

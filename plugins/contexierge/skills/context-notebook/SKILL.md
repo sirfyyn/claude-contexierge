@@ -33,7 +33,10 @@ don't copy the old one over. The archived version is there to read if you need i
 - If a compaction just happened and the hook said the notebook is missing, create it right away.
 - If the hook handed you an archived notebook from the day change, write the fresh one right away.
 
-## What goes in (≤ ~150 lines)
+## What goes in (≤ ~150 lines, under 9,000 characters)
+
+Longer notebooks are cut off at 9,000 characters on injection: Claude Code shows hook context over 10,000 characters
+only as a short preview, so anything past the limit would never reach you.
 
 - The user's requests, in their own words where wording matters.
 - Decisions and approvals (who, what, when).

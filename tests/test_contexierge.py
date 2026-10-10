@@ -54,7 +54,17 @@ def test_oversized_notebook_is_truncated(directory: Path):
     (directory / "x.md").write_text("a" * 20_000, encoding="utf-8")
     _, out = _hook(directory, {"hook_event_name": "SessionStart", "source": "compact", "session_id": "x"})
     context = json.loads(out)["hookSpecificOutput"]["additionalContext"]
-    assert "truncated" in context and len(context) < 17_000
+    # Claude Code shows hook context over 10,000 characters only as a short preview
+    assert "truncated" in context and len(context) < 10_000
+
+
+def test_archived_oversized_notebook_stays_below_hook_limit(directory: Path):
+    old = directory / "archive" / "2000-01-01"
+    old.mkdir(parents=True)
+    (old / "y.md").write_text("b" * 20_000, encoding="utf-8")
+    _, out = _hook(directory, {"hook_event_name": "SessionStart", "source": "compact", "session_id": "y"})
+    context = json.loads(out)["hookSpecificOutput"]["additionalContext"]
+    assert "Write a fresh notebook" in context and len(context) < 10_000
 
 
 def test_session_id_cannot_escape_directory(directory: Path):

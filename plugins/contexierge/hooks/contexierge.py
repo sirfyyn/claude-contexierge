@@ -37,7 +37,9 @@ try:
 except ImportError:  # Windows: no lock, the day marker still keeps repeat runs cheap
     fcntl = None
 
-MAX_CHARS = 16_000
+# Claude Code moves hook context over 10,000 characters into a file and shows only a short preview of it, so the whole
+# injection (intro line plus notebook) has to stay below that.
+MAX_CHARS = 9_000
 _SAFE = re.compile(r"[^A-Za-z0-9_-]")
 
 
@@ -131,7 +133,7 @@ def archived_notebook(session_file: str) -> Path | None:
 def _body(text: str) -> tuple[str, bool]:
     truncated = len(text) > MAX_CHARS
     return text[:MAX_CHARS] + (
-        "\n\n[… truncated: notebook exceeds 16,000 characters — condense it the next time you update it]"
+        f"\n\n[… truncated: notebook exceeds {MAX_CHARS:,} characters — condense it now, the rest was not shown]"
         if truncated else ""
     ), truncated
 
